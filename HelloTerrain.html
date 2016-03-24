@@ -1,0 +1,32 @@
+<!DOCTYPE HTML> 
+<html lang="en"> 
+<head>
+<title>Hello Terrain </title>
+<meta charset="utf-8"> 
+</head>
+<script src="gl-matrix-min.js"></script> 
+<script src="webgl-utils.js"></script>
+<script src="simpleModeling.js"></script>   
+<script src="terrainModeling.js"></script>  
+<script src="HelloTerrain.js"></script>   
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.2.0/gl-matrix-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.5/jquery.fullPage.min.js"></script>
+<script src="JS/ResourceManagement/ResourceLoadRequestObject.js"></script>
+<script src="JS/ResourceManagement/ResourceLoader.js"></script>
+<script src="JS/example.js"></script>
+<script src="JS/environmentalmapping.js"></script>
+<script src="js/index.js"> </script>
+<body onload="startup();">
+ <canvas id="myGLCanvas" width="800" height="600"></canvas>
+    <form id="input_form">
+        <fieldset>
+            <legend>Rendering Parameters</legend>
+         <input type="radio" name="primitive" id="v" value="v">  vertical rotate
+         <input type="radio" name="primitive" id="h" id="polygon" value="h" checked> horizontal rotate
+        </fieldset>
+        </form>
+</body>
+
+</html>

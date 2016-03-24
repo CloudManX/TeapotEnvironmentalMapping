@@ -1,0 +1,14 @@
+precision mediump float;    
+
+varying vec4 vColor;        
+varying vec3 viewVector;
+varying vec3 normalVector;
+uniform samplerCube texMap;
+
+void main()                 
+{   
+    vec3 reflectionVector = normalize(reflect(viewVector, normalVector));
+    vec4 texColor = textureCube(texMap, reflectionVector);       
+    gl_FragColor = vColor * texColor;      
+}                           
+
